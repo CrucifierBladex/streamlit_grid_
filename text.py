@@ -37,7 +37,9 @@ def user_input_features():
 df=user_input_features()
 st.write(df)
 
-pred=model.predict(df)
+pred_=model.predict(df)
+pred_[pred_ <= 0.5] = 0
+pred_[pred_ > 0.5] = 1
 st.write('*****Prediction*****')
 st.write('***')
 st.write(pred)
