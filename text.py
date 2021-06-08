@@ -42,4 +42,8 @@ pred_[pred_ <= 0.5] = 0
 pred_[pred_ > 0.5] = 1
 st.write('*****Prediction*****')
 st.write('***')
+if pred_ > 0.5:
+	st.write('Stable System')
+elif pred_ < 0.5:
+	st.write('Unstable System')
 st.write(pred_)
