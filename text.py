@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from keras.models import load_model
-model=load_model('model(1).h5')
+model=load_model('model_.h5')
 st.title('Grid Stability Prediction')
 st.write("""
 This app predicts the stability of the power grid""")
