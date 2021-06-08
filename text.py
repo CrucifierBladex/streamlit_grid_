@@ -42,4 +42,4 @@ pred_[pred_ <= 0.5] = 0
 pred_[pred_ > 0.5] = 1
 st.write('*****Prediction*****')
 st.write('***')
-st.write(pred)
+st.write(pred_)
